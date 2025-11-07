@@ -1,0 +1,20 @@
+{
+  "name": "epub-annotator",
+  "version": "1.0.0",
+  "description": "Epub Annotator – convert EPUB/Markdown/Txt into annotated EPUBs",
+  "license": "MIT",
+  "main": "src/pipeline.js",
+  "bin": {
+    "epub-annotator": "src/pipeline.js",
+    "epub2txt": "src/pipeline.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "annotate": "node src/pipeline.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.4.0",
+    "node-stream-zip": "^1.15.0",
+    "turndown": "^7.1.2"
+  }
+}
